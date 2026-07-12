@@ -1,3 +1,4 @@
+console.log("script loaded");
 console.log("JS working");
 const teamMembers = [
     {
