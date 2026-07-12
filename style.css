@@ -55,12 +55,13 @@ nav a:hover{
     display:flex;
     justify-content:center;
     align-items:center;
-    text-align:center;
-    padding:60px 20px;
+    padding:60px 8%;
 }
 
 .hero-text{
-    max-width:850px;
+    width:100%;
+    max-width:1100px;
+    text-align:center;
 }
 
 .hero-text h4{
@@ -70,16 +71,17 @@ nav a:hover{
 }
 
 .hero-text h1{
-    font-size:60px;
-    line-height:1.2;
-    margin-bottom:25px;
+    font-size:75px;
+    line-height:1.1;
+    margin:20px 0;
 }
 
 .hero-text p{
-    font-size:20px;
-    color:#D9D9D9;
+    font-size:24px;
     line-height:1.8;
-    margin-bottom:35px;
+    max-width:900px;
+    margin:0 auto 40px;
+    color:#D9D9D9;
 }
 
 #teamBtn{
