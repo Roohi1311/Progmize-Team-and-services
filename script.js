@@ -1,5 +1,6 @@
 console.log("script loaded");
 console.log("JS working");
+
 const teamMembers = [
     {
         role: "CEO",
@@ -34,6 +35,7 @@ const teamMembers = [
 ];
 
 let index = 0;
+let teamInterval;
 
 const empImage = document.getElementById("empImage");
 const empRole = document.getElementById("empRole");
@@ -49,7 +51,7 @@ function showTeamMember(){
     index++;
 
     if(index >= teamMembers.length){
-        index = 0;
+        clearInterval(teamInterval);
     }
 }
 
@@ -57,8 +59,10 @@ document.getElementById("teamBtn").addEventListener("click", function(){
 
     teamCard.style.display = "flex";
 
+    index = 0;
+
     showTeamMember();
 
-    setInterval(showTeamMember, 3000);
+    teamInterval = setInterval(showTeamMember, 3000);
 
 });
