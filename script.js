@@ -46,10 +46,8 @@ function showTeamMember() {
     empName.textContent = teamMembers[index].name;
 }
 
-// Page load hote hi pehla member show karo
 showTeamMember();
 
-// Next button
 document.getElementById("nextBtn").addEventListener("click", function () {
     index++;
 
@@ -60,7 +58,6 @@ document.getElementById("nextBtn").addEventListener("click", function () {
     showTeamMember();
 });
 
-// Previous button
 document.getElementById("prevBtn").addEventListener("click", function () {
     index--;
 
