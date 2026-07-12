@@ -145,3 +145,11 @@ body{
 }
 
 }
+.teamText{
+    display:block;
+    margin-bottom:30px !important;
+}
+
+#teamBtn{
+    margin-top:15px !important;
+}
