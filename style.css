@@ -152,4 +152,32 @@ body{
     margin-top:0;
 }
 }
+.team-card{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+    width:800px;
+    margin:50px auto;
+    background:white;
+    color:#071A3D;
+    padding:30px;
+    border-radius:20px;
+}
 
+.team-image img{
+    width:250px;
+    height:250px;
+    object-fit:contain;
+    border-radius:15px;
+}
+
+.team-info h2{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.team-info p{
+    font-size:22px;
+    color:#555;
+}
