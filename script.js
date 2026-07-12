@@ -35,34 +35,38 @@ const teamMembers = [
 ];
 
 let index = 0;
-let teamInterval;
 
 const empImage = document.getElementById("empImage");
 const empRole = document.getElementById("empRole");
 const empName = document.getElementById("empName");
-const teamCard = document.getElementById("teamCard");
 
-function showTeamMember(){
-
+function showTeamMember() {
     empImage.src = teamMembers[index].image;
     empRole.textContent = teamMembers[index].role;
     empName.textContent = teamMembers[index].name;
-
-    index++;
-
-    if(index >= teamMembers.length){
-        clearInterval(teamInterval);
-    }
 }
 
-document.getElementById("teamBtn").addEventListener("click", function(){
+// Page load hote hi pehla member show karo
+showTeamMember();
 
-    teamCard.style.display = "flex";
+// Next button
+document.getElementById("nextBtn").addEventListener("click", function () {
+    index++;
 
-    index = 0;
+    if (index >= teamMembers.length) {
+        index = 0;
+    }
 
     showTeamMember();
+});
 
-    teamInterval = setInterval(showTeamMember, 3000);
+// Previous button
+document.getElementById("prevBtn").addEventListener("click", function () {
+    index--;
 
+    if (index < 0) {
+        index = teamMembers.length - 1;
+    }
+
+    showTeamMember();
 });
