@@ -59,8 +59,6 @@ document.getElementById("teamBtn").addEventListener("click", function(){
 
     showTeamMember();
 
-    teamCard.scrollIntoView({ behavior: "smooth" });
-
     setInterval(showTeamMember, 3000);
 
 });
