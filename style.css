@@ -77,6 +77,8 @@ body{
     font-weight:bold;
     border-radius:50px;
     cursor:pointer;
+    position:relative;
+    z-index:999;
 }
 
 #teamBtn:hover{
