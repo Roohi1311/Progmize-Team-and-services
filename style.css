@@ -14,7 +14,21 @@ body{
     color:#fff;
     overflow-x:hidden;
 }
+.team-page{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:30px 20px;
+}
 
+.team-page h1{
+    text-align:center;
+    color:#F4B400;
+    font-size:40px;
+    margin-bottom:25px;
+}
 .hero{
     min-height:100vh;
     display:flex;
@@ -106,9 +120,10 @@ body{
 }
 
 .team-card img{
-    width:240px;
-    height:240px;
+    width:200px;
+    height:280px;
     object-fit:contain;
+    background:#123C73; 
     border-radius:15px;
 }
 
@@ -177,34 +192,20 @@ body{
     margin-top:0;
 }
 }
+.team-page h1{
+    font-size:28px;
+}
+
 .team-card{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:50px;
-    width:800px;
-    margin:50px auto;
-    background:white;
-    color:#071A3D;
-    padding:30px;
-    border-radius:20px;
+    width:95%;
+    flex-direction:column;
+    gap:20px;
+    padding:20px;
 }
 
-.team-image img{
-    width:250px;
-    height:250px;
-    object-fit:contain;
-    border-radius:15px;
-}
-
-.team-info h2{
-    font-size:32px;
-    margin-bottom:10px;
-}
-
-.team-info p{
-    font-size:22px;
-    color:#555;
+.team-card img{
+    width:160px;
+    height:240px;
 }
 .back-page h1{
     font-size:32px;
