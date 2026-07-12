@@ -1,5 +1,4 @@
-console.log("script loaded");
-console.log("JS working");
+console.log("JS Working");
 
 const teamMembers = [
     {
@@ -40,30 +39,28 @@ const empImage = document.getElementById("empImage");
 const empRole = document.getElementById("empRole");
 const empName = document.getElementById("empName");
 
-function showTeamMember() {
+function showMember() {
+
     empImage.src = teamMembers[index].image;
     empRole.textContent = teamMembers[index].role;
     empName.textContent = teamMembers[index].name;
-}
 
-showTeamMember();
-
-document.getElementById("nextBtn").addEventListener("click", function () {
     index++;
 
     if (index >= teamMembers.length) {
-        index = 0;
+
+        clearInterval(teamInterval);
+
+        setTimeout(function () {
+
+            window.location.href = "back.html";
+
+        }, 5000);
+
     }
 
-    showTeamMember();
-});
+}
 
-document.getElementById("prevBtn").addEventListener("click", function () {
-    index--;
+showMember();
 
-    if (index < 0) {
-        index = teamMembers.length - 1;
-    }
-
-    showTeamMember();
-});
+let teamInterval = setInterval(showMember, 5000);
