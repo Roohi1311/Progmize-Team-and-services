@@ -137,5 +137,10 @@ nav{
 .team-card img{
     height:300px;
 }
+}
 
+.mainLogo{
+    width:220px;
+    height:auto;
+    margin-bottom:30px;
 }
