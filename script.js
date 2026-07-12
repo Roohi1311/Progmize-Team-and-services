@@ -1,3 +1,4 @@
+console.log("JS working");
 const teamMembers = [
     {
         role: "CEO",
