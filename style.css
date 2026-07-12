@@ -128,20 +128,23 @@ body{
     justify-content:center;
     align-items:center;
     text-align:center;
-    gap:20px;
 }
 
 .back-page h1{
     font-size:48px;
     color:#FFD700;
+    margin-bottom:20px;
 }
 
 .back-page p{
     font-size:22px;
-    color:white;
-    margin-bottom:20px;
+    color:#fff;
+    margin-bottom:40px;
 }
 
+.back-page #teamBtn{
+    margin-top:0;
+}
 @media(max-width:768px){
 
 .hero{
