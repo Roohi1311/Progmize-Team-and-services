@@ -1,1 +1,11 @@
-hhh
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#071A3D;
+    color:white;
+}
