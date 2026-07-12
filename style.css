@@ -93,11 +93,11 @@ body{
 }
 
 .team-card{
-  display:flex;
+    display:flex;
     align-items:center;
     justify-content:center;
     gap:35px;
-    width:750px;
+    width:800px;
     margin:20px auto;
     background:white;
     color:#071A3D;
@@ -106,8 +106,8 @@ body{
 }
 
 .team-card img{
-   width:210px;
-    height:210px;
+    width:240px;
+    height:240px;
     object-fit:contain;
     border-radius:15px;
 }
