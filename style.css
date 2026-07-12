@@ -121,6 +121,26 @@ body{
     font-size:20px;
     color:#555;
 }
+.back-page{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    gap:20px;
+}
+
+.back-page h1{
+    font-size:48px;
+    color:#FFD700;
+}
+
+.back-page p{
+    font-size:22px;
+    color:white;
+    margin-bottom:20px;
+}
 
 @media(max-width:768px){
 
@@ -180,4 +200,15 @@ body{
 .team-info p{
     font-size:22px;
     color:#555;
+}
+.back-page h1{
+    font-size:32px;
+}
+
+.back-page p{
+    font-size:18px;
+}
+
+.back-page #teamBtn{
+    width:220px;
 }
