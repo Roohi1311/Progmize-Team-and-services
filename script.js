@@ -55,10 +55,10 @@ function showTeamMember(){
 
 document.getElementById("teamBtn").addEventListener("click", function(){
 
+    console.log("Button clicked");
+
     teamCard.style.display = "block";
 
     showTeamMember();
-
-    setInterval(showTeamMember, 3000);
 
 });
