@@ -37,9 +37,11 @@ body{
 }
 
 .hero-text h1{
-    font-size:75px;
-    line-height:1.1;
+    font-size:56px;
+    font-weight:700;
+    line-height:1.15;
     margin:20px 0;
+    max-width:900px;
 }
 
 .hero-text p{
@@ -143,4 +145,11 @@ nav{
     width:220px;
     height:auto;
     margin-bottom:30px;
+}
+.meetText{
+    margin-top:25px;
+    margin-bottom:15px;
+    color:#ffffff;
+    font-size:22px;
+    font-weight:500;
 }
